@@ -1,0 +1,25 @@
+﻿  main.cpp
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\BTree.h(121,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\BTree.h(101): message : while compiling class template member function 'bool BTree<templateType>::addByPath(T,std::string)'
+          with
+          [
+              T=templateType
+          ]
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\main.cpp(55): message : see reference to function template instantiation 'bool BTree<templateType>::addByPath(T,std::string)' being compiled
+          with
+          [
+              T=templateType
+          ]
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\main.cpp(23): message : see reference to class template instantiation 'BTree<templateType>' being compiled
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\BTree.h(183,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\BTree.h(174): message : while compiling class template member function 'T BTree<T>::findByPath(std::string)'
+          with
+          [
+              T=templateType
+          ]
+C:\Users\GalAs\source\repos\HW3-BTree\HW3-BTree\main.cpp(89): message : see reference to function template instantiation 'T BTree<T>::findByPath(std::string)' being compiled
+          with
+          [
+              T=templateType
+          ]
+  HW3-BTree.vcxproj -> C:\Users\GalAs\source\repos\HW3-BTree\Debug\HW3-BTree.exe
