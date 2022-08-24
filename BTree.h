@@ -94,6 +94,7 @@ BTree<T>::BTree(char tav_right, char tav_left): TAV_RIGHT(tav_right), TAV_LEFT(t
 template <typename T>
 BTree<T>::~BTree()
 {
+	delete root;
 }
 
 template <typename T>

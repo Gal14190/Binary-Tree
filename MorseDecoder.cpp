@@ -2,7 +2,9 @@
 
 MorseDecoder::MorseDecoder()
 {
-	morseTree = new BTree<char>(TAV_RIGHT, TAV_LEFT);
+	morseTree = BTree<char>(TAV_RIGHT, TAV_LEFT);
+
+	// init tree
 
 	string paths[] =
 	{
@@ -44,7 +46,7 @@ MorseDecoder::MorseDecoder()
 
 	for (int i = 0; i < sizeof(values) / sizeof(char); i++)
 	{
-		if (!morseTree->addByPath(values[i], paths[i])) // add value by path
+		if (!morseTree.addByPath(values[i], paths[i])) // add value by path
 			cout
 			<< "ERROR!! CAN'T INSERT DATA {" << values[i]
 			<< "} INTO \"" << paths[i] << "\""
@@ -58,10 +60,12 @@ MorseDecoder::~MorseDecoder()
 
 ostream& operator<< (ostream& out, MorseDecoder& m)
 {
-	return out << m.morseTree->pre();
+	// return preorder
+	return out << m.morseTree.pre();
 }
 
 string MorseDecoder::decode(string morseStr)
 {
-	return string(1, morseTree->findByPath(morseStr));
+	// return the value of the path
+	return string(1, morseTree.findByPath(morseStr));
 }

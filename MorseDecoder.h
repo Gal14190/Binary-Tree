@@ -11,7 +11,7 @@ private:
 	const char TAV_RIGHT = '-';	// right diraction
 	const char TAV_LEFT = '.';	// left diraction
 
-	BTree<char>* morseTree;
+	BTree<char> morseTree;
 
 public:
 	/**
